@@ -1,8 +1,6 @@
 <template>
   <v-app dark>
     <v-navigation-drawer
-      :mini-variant="miniVariant"
-      :clipped="clipped"
       v-model="drawer"
       fixed
       app
@@ -24,58 +22,30 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar 
-      fixed 
+    <v-toolbar
+      scroll-off-screen
       app 
-      :clipped-left="clipped">
-      <v-toolbar-side-icon @click="drawer = !drawer" />
-      <v-btn
-        icon
-        @click.stop="miniVariant = !miniVariant"
-      >
-        <v-icon v-html="miniVariant ? 'chevron_right' : 'chevron_left'" />
-      </v-btn>
-      <v-btn
-        icon
-        @click.stop="clipped = !clipped"
-      >
-        <v-icon>web</v-icon>
-      </v-btn>
-      <v-btn
-        icon
-        @click.stop="fixed = !fixed"
-      >
-        <v-icon>remove</v-icon>
-      </v-btn>
+      :clipped-left="clipped"
+      extended>
       <v-toolbar-title v-text="title" />
-      <v-spacer />
-      <v-btn
-        icon
-        @click.stop="rightDrawer = !rightDrawer"
-      >
-        <v-icon>menu</v-icon>
-      </v-btn>
+      <v-spacer/>
+      <v-toolbar-items slot="extension">
+        <v-toolbar-side-icon @click="drawer = !drawer" />
+        <v-btn 
+          flat
+          router
+          :to="item.to"
+          :key="i"
+          v-for="(item, i) in items"
+          exact>
+          {{ item.title }}</v-btn>
+      </v-toolbar-items>
     </v-toolbar>
     <v-content>
       <v-container>
         <nuxt />
       </v-container>
     </v-content>
-    <v-navigation-drawer
-      temporary
-      :right="right"
-      v-model="rightDrawer"
-      fixed
-    >
-      <v-list>
-        <v-list-tile @click.native="right = !right">
-          <v-list-tile-action>
-            <v-icon light>compare_arrows</v-icon>
-          </v-list-tile-action>
-          <v-list-tile-title>Switch drawer (click me)</v-list-tile-title>
-        </v-list-tile>
-      </v-list>
-    </v-navigation-drawer>
     <v-footer 
       :fixed="fixed" 
       app>
@@ -88,17 +58,13 @@
   export default {
     data() {
       return {
-        clipped: false,
-        drawer: true,
-        fixed: false,
+        drawer: false,
         items: [
           { icon: 'apps', title: 'Welcome', to: '/' },
+          { icon: 'bubble_chart', title: 'Inspire', to: '/inspire' },
           { icon: 'bubble_chart', title: 'Inspire', to: '/inspire' }
         ],
-        miniVariant: false,
-        right: true,
-        rightDrawer: false,
-        title: 'Vuetify.js'
+        title: 'NuxtSteem'
       }
     }
   }
