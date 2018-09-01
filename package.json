@@ -11,7 +11,7 @@
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint",
-    "test": "npm run unit",
+    "test": "npm run unit --silent",
     "unit": "jest --config tests/unit/jest.conf.js",
     "storybook": "start-storybook -p 9001 -c .storybook"
   },

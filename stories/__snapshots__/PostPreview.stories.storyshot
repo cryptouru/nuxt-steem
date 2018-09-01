@@ -1,0 +1,169 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots PostPreview default 1`] = `
+<div>
+  <div
+    class="v-card v-card--hover theme--light"
+  >
+    <div
+      class="v-responsive v-image"
+    >
+      <div
+        class="v-responsive__sizer"
+        style="padding-bottom: 16.666666666666664%;"
+      />
+      <div
+        class="v-image__image v-image__image--preload v-image__image--cover"
+        style="background-position: center center;"
+      />
+      <div
+        class="v-responsive__content"
+      />
+    </div>
+     
+    <div
+      class="v-card__title v-card__title--primary"
+    >
+      <div>
+        <h3
+          class="headline mb-0"
+        >
+          My awesome steem titlee
+        </h3>
+         
+        <div>
+          The Bank of Neoxian shall loan the sum of 120 steem to @owner99. He promises to repay 135 steem. He shall p...
+        </div>
+         
+        <div
+          class="stats"
+        >
+          <button
+            class="up-vote v-btn v-btn--icon theme--light"
+            type="button"
+          >
+            <div
+              class="v-btn__content"
+            >
+              <i
+                aria-hidden="true"
+                class="v-icon material-icons theme--light"
+              >
+                keyboard_arrow_up
+              </i>
+            </div>
+          </button>
+          $12.17 
+          <i
+            aria-hidden="true"
+            class="v-icon votes material-icons theme--light"
+          >
+            keyboard_arrow_up
+          </i>
+          19 
+          <button
+            class="v-btn v-btn--icon theme--light"
+            type="button"
+          >
+            <div
+              class="v-btn__content"
+            >
+              <i
+                aria-hidden="true"
+                class="v-icon material-icons theme--light"
+              >
+                comment
+              </i>
+            </div>
+          </button>
+          19
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots PostPreview voted 1`] = `
+<div>
+  <div
+    class="v-card v-card--hover theme--light"
+  >
+    <div
+      class="v-responsive v-image"
+    >
+      <div
+        class="v-responsive__sizer"
+        style="padding-bottom: 16.666666666666664%;"
+      />
+      <div
+        class="v-image__image v-image__image--preload v-image__image--cover"
+        style="background-position: center center;"
+      />
+      <div
+        class="v-responsive__content"
+      />
+    </div>
+     
+    <div
+      class="v-card__title v-card__title--primary"
+    >
+      <div>
+        <h3
+          class="headline mb-0"
+        >
+          My awesome steem titlee
+        </h3>
+         
+        <div>
+          The Bank of Neoxian shall loan the sum of 120 steem to @owner99. He promises to repay 135 steem. He shall p...
+        </div>
+         
+        <div
+          class="stats"
+        >
+          <button
+            class="up-vote v-btn v-btn--icon theme--light voted"
+            type="button"
+          >
+            <div
+              class="v-btn__content"
+            >
+              <i
+                aria-hidden="true"
+                class="v-icon material-icons theme--light"
+              >
+                keyboard_arrow_up
+              </i>
+            </div>
+          </button>
+          $12.17 
+          <i
+            aria-hidden="true"
+            class="v-icon votes material-icons theme--light"
+          >
+            keyboard_arrow_up
+          </i>
+          19 
+          <button
+            class="v-btn v-btn--icon theme--light"
+            type="button"
+          >
+            <div
+              class="v-btn__content"
+            >
+              <i
+                aria-hidden="true"
+                class="v-icon material-icons theme--light"
+              >
+                comment
+              </i>
+            </div>
+          </button>
+          19
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
