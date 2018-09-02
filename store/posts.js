@@ -12,11 +12,18 @@ export const mutations = {
 }
 
 export const actions = {
-  setPosts(vuexContext, posts) {
-    vuexContext.commit('setPosts', posts)
-  },
-  retreivePosts(vuexContext) {
-    
+  retreive(vuexContext, payload) {
+    const topic = payload.topic
+    const query = {
+      limit: 20,
+    }
+    if (payload.tag)
+      query.tag = payload.tag
+    return this.app.$steemApi.database.getDiscussions(topic, query)
+      .then((result) => {
+        vuexContext.commit('set', result)
+      })
+      .catch(err => console.log(err))
   }
 }
 

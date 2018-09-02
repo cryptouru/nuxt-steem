@@ -15,7 +15,10 @@
 <script>
 export default {
   fetch(context) {
-    console.log(context.app.$steemApi, 'async')
+    context.store.dispatch('posts/retreive', {topic: 'hot', tag:'steem'})
+      .then(() => {
+        console.log(context.store.state.posts.loadedPosts)
+      })
   },
   created () {
     console.log(this.$steemApi, 'created')
