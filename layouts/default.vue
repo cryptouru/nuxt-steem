@@ -25,7 +25,6 @@
     <v-toolbar
       scroll-off-screen
       app 
-      :clipped-left="clipped"
       extended>
       <v-toolbar-title v-text="title" />
       <v-spacer/>
@@ -46,8 +45,7 @@
         <nuxt />
       </v-container>
     </v-content>
-    <v-footer 
-      :fixed="fixed" 
+    <v-footer
       app>
       <span>&copy; 2017</span>
     </v-footer>
