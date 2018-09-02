@@ -23,8 +23,9 @@ export const actions = {
       query.tag = payload.tag
     return this.app.$steemApi.database.getDiscussions(topic, query)
       .then((result) => {
-        console.log(postHelper.shape(result))
-        vuexContext.commit('set', result)
+        let posts = postHelper.shape(result)
+        console.log(posts)
+        vuexContext.commit('set', posts)
       })
       .catch(err => console.log(err))
   }

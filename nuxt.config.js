@@ -54,7 +54,18 @@ module.exports = {
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
   },
-
+  /*
+  ** Custom routing
+  */
+  router: {
+    extendRoutes (routes, resolve) {
+      routes.push({
+        name: 'feed',
+        path: '/:sortBy(trending|created|active|hot|promoted)?/:tag?',
+        component: resolve(__dirname, 'pages/index.vue')
+      })
+    }
+  },
   /*
   ** Build configuration
   */

@@ -3,21 +3,19 @@
     <v-navigation-drawer
       v-model="drawer"
       fixed
+      disable-resize-watcher
       app
     >
       <v-list>
         <v-list-tile
           router
-          :to="item.to"
+          :to="tag"
           :key="i"
-          v-for="(item, i) in items"
+          v-for="(tag, i) in tags"
           exact
         >
-          <v-list-tile-action>
-            <v-icon v-html="item.icon" />
-          </v-list-tile-action>
           <v-list-tile-content>
-            <v-list-tile-title v-text="item.title" />
+            <v-list-tile-title v-text="tag" />
           </v-list-tile-content>
         </v-list-tile>
       </v-list>
@@ -33,7 +31,7 @@
         <v-btn 
           flat
           router
-          :to="item.to"
+          :to="item.to + '/' + currentTag"
           :key="i"
           v-for="(item, i) in items"
           exact>
@@ -45,10 +43,6 @@
         <nuxt />
       </v-container>
     </v-content>
-    <v-footer
-      app>
-      <span>&copy; 2017</span>
-    </v-footer>
   </v-app>
 </template>
 
@@ -58,11 +52,22 @@
       return {
         drawer: false,
         items: [
-          { icon: 'apps', title: 'Welcome', to: '/' },
-          { icon: 'bubble_chart', title: 'Inspire', to: '/inspire' },
-          { icon: 'bubble_chart', title: 'Inspire', to: '/inspire' }
+          { title: 'Hot', to: '/hot' },
+          { title: 'Trending', to: '/trending' },
+          { title: 'New', to: '/created' }
+        ],
+        tags: [
+          'steem',
+          'life',
+          'cryptocurrency',
+          'comus-fun'
         ],
         title: 'NuxtSteem'
+      }
+    },
+    computed: {
+      currentTag() {
+        return this.$route.params.tag
       }
     }
   }

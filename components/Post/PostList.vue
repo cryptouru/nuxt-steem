@@ -49,11 +49,6 @@ export default {
   components: {
     PostPreview
   },
-  created () {
-    console.log(this.posts)
-    console.log(this.noPosts)
-    console.log(this.showPosts)
-  },
   computed: {
     noPosts() {
       return this.posts.length === 0;
@@ -83,7 +78,6 @@ export default {
 }
 .loading-item {
     width: 100%;
-    background: white;
     line-height: 1rem;
     padding: 16px;
     margin-bottom: 32px; 
