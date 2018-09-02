@@ -17,11 +17,23 @@ export default {
   fetch(context) {
     context.store.dispatch('posts/retreive', {topic: 'hot', tag:'steem'})
       .then(() => {
-        console.log(context.store.state.posts.loadedPosts)
+        // console.log(context.store.state.posts.loadedPosts)
       })
   },
+  head () {
+    return {
+      title: 'Yes james',
+      meta: [
+        { hid: 'description', name: 'description', content: 'My custom description' },
+        { hid: 'description2', name: 'description2', content: 'I am rendered on the server!' }
+      ]
+    }
+  },
   created () {
-    console.log(this.$steemApi, 'created')
+    console.log('created')
+  },
+  mounted () {
+    console.log('mounted')
   }
 }
 </script>

@@ -1,3 +1,5 @@
+import postHelper from '@/helpers/posts'
+
 export const state = () => ({
   loadedPosts: []
 })
@@ -21,6 +23,7 @@ export const actions = {
       query.tag = payload.tag
     return this.app.$steemApi.database.getDiscussions(topic, query)
       .then((result) => {
+        console.log(postHelper.shape(result))
         vuexContext.commit('set', result)
       })
       .catch(err => console.log(err))

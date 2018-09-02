@@ -57,7 +57,7 @@ export default {
       type: Number,
       required: true
     },
-    vote_count: {
+    net_votes: {
       type: Number,
       required: true
     },

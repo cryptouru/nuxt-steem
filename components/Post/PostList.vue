@@ -31,7 +31,7 @@
 </template>
 
 <script>
-import PostPreview from "./PostPreview";
+import PostPreview from "./PostPreview"
 export default {
   name: "PostList",
   props: {
