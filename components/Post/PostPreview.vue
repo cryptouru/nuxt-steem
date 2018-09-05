@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-card hover>
+    <v-card hover :href="'https:busy.org' + url" target="blank">
       <v-card-title>
         <div>
           <h3 class="mb-0">{{ title }}</h3>
@@ -16,11 +16,6 @@
           <div class="stats"> <v-btn @click="$emit('vote', root_permlink)" icon class="up-vote" :class="{ voted: voted }"><v-icon>keyboard_arrow_up</v-icon></v-btn> {{ net_votes }} <v-btn icon><v-icon>comment</v-icon></v-btn>{{ comment_count }} <span class="payout">${{ payout }}</span></div>
         </div>
       </v-card-title>
-
-      <!-- <v-card-actions>
-        <v-btn flat>Share</v-btn>
-        <v-btn flat>Explore</v-btn>
-      </v-card-actions> -->
     </v-card>
   </div>
 </template>
@@ -70,6 +65,10 @@ export default {
       required: true
     },
     root_permlink: {
+      type: String,
+      required: true
+    },
+    url: {
       type: String,
       required: true
     },

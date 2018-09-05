@@ -1,7 +1,8 @@
 import postHelper from '@/helpers/posts'
 
 export const state = () => ({
-  loadedPosts: []
+  loadedPosts: [],
+  topTags: []
 })
 
 export const mutations = {
@@ -10,10 +11,24 @@ export const mutations = {
   },
   add(state, post) {
     state.loadedPosts.push(post)
+  },
+  setTags(state, tags) {
+    state.topTags = tags
   }
 }
 
 export const actions = {
+  loadTags(vuexContext, context) {
+    console.log('loading tags')
+    return this.app.$steemApi.call('condenser_api', 'get_trending_tags', ['', 50])
+      .then(data => {
+        data.shift()
+        let tags = data.map(i => i.name)
+        console.log(tags)
+        vuexContext.commit('setTags', tags)
+      })
+      .catch(e => console.log(e))
+  },
   retreive(vuexContext, payload) {
     const topic = payload.topic
     const query = {
@@ -34,5 +49,8 @@ export const actions = {
 export const getters = {
   loadedPosts(state) {
     return state.loadedPosts
+  },
+  topTags(state) {
+    return state.topTags
   }
 }

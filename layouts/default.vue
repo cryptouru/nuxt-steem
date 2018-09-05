@@ -56,18 +56,21 @@
           { title: 'Trending', to: '/trending' },
           { title: 'New', to: '/created' }
         ],
-        tags: [
+        /*tags: [
           'steem',
           'life',
           'cryptocurrency',
           'comus-fun'
-        ],
+        ],*/
         title: 'NuxtSteem'
       }
     },
     computed: {
       currentTag() {
-        return this.$route.params.tag
+        return this.$route.params.tag || ''
+      },
+      tags() {
+        return this.$store.getters['posts/topTags']
       }
     }
   }
