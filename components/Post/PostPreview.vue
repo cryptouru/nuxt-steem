@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-card hover :href="'https:busy.org' + url" target="blank">
+    <v-card hover :href="'https://busy.org' + url" target="blank">
       <v-card-title>
         <div>
           <h3 class="mb-0">{{ title }}</h3>
