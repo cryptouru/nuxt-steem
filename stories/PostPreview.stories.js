@@ -12,10 +12,11 @@ export const preview = {
   author: 'neoxian',
   author_rep: 68,
   payout: 12.17,
-  vote_count: 19,
+  net_votes: 19,
   comment_count: 19,
   parent_permlink: 'bank',
   root_permlink: 'the-menzoberranzan-bank-of-neoxian-daily-contracts-2018-08-30',
+  url: '/kr/@aaron2020jeju/3datge-kr-gazua',
   img_url: 'https://steemitimages.com/0x0/https://userscontent2.emaze.com/images/20793e54-4ec0-4009-91c3-fb135c1e4fcb/471794c96ca375908b6f64336e5a6019.jpg',
   created: new Date(2018, 0, 1, 9, 0)
 };

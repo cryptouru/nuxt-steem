@@ -16,7 +16,7 @@ Vue.use(Vuetify, {
   },
   iconfont: 'fa'
 })
-import '../node_modules/vuetify/dist/vuetify.min.css'
+
 
 // Import your custom components.
 // import Logo from '../components/Logo.vue'

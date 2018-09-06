@@ -16,7 +16,7 @@
     "precommit": "npm run lint",
     "test": "npm run unit --silent",
     "unit": "jest --config tests/unit/jest.conf.js",
-    "storybook": "start-storybook -p 9001 -c .storybook"
+    "storybook": "start-storybook -p 9001 -c .storybook -s ./node_modules/vuetify/dist/"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.0.0",

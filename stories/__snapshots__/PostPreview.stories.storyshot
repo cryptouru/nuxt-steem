@@ -2,15 +2,38 @@
 
 exports[`Storyshots PostPreview default 1`] = `
 <div>
-  <div
+  <a
     class="v-card v-card--hover theme--light"
+    href="https://busy.org/kr/@aaron2020jeju/3datge-kr-gazua"
+    target="blank"
   >
+    <div
+      class="v-card__title"
+    >
+      <div>
+        <h3
+          class="mb-0"
+        >
+          The Menzoberranzan Bank of Neoxian: daily contracts: 2018-08-30
+        </h3>
+         
+        <div
+          class="author"
+        >
+          neoxian  
+          <span>
+            68
+          </span>
+        </div>
+      </div>
+    </div>
+     
     <div
       class="v-responsive v-image"
     >
       <div
         class="v-responsive__sizer"
-        style="padding-bottom: 16.666666666666664%;"
+        style="padding-bottom: 25%;"
       />
       <div
         class="v-image__image v-image__image--preload v-image__image--cover"
@@ -22,15 +45,9 @@ exports[`Storyshots PostPreview default 1`] = `
     </div>
      
     <div
-      class="v-card__title v-card__title--primary"
+      class="v-card__title"
     >
       <div>
-        <h3
-          class="headline mb-0"
-        >
-          My awesome steem titlee
-        </h3>
-         
         <div>
           The Bank of Neoxian shall loan the sum of 120 steem to @owner99. He promises to repay 135 steem. He shall p...
         </div>
@@ -53,14 +70,7 @@ exports[`Storyshots PostPreview default 1`] = `
               </i>
             </div>
           </button>
-          $12.17 
-          <i
-            aria-hidden="true"
-            class="v-icon votes material-icons theme--light"
-          >
-            keyboard_arrow_up
-          </i>
-          19 
+           19 
           <button
             class="v-btn v-btn--icon theme--light"
             type="button"
@@ -76,25 +86,53 @@ exports[`Storyshots PostPreview default 1`] = `
               </i>
             </div>
           </button>
-          19
+          19 
+          <span
+            class="payout"
+          >
+            $12.17
+          </span>
         </div>
       </div>
     </div>
-  </div>
+  </a>
 </div>
 `;
 
 exports[`Storyshots PostPreview voted 1`] = `
 <div>
-  <div
+  <a
     class="v-card v-card--hover theme--light"
+    href="https://busy.org/kr/@aaron2020jeju/3datge-kr-gazua"
+    target="blank"
   >
+    <div
+      class="v-card__title"
+    >
+      <div>
+        <h3
+          class="mb-0"
+        >
+          The Menzoberranzan Bank of Neoxian: daily contracts: 2018-08-30
+        </h3>
+         
+        <div
+          class="author"
+        >
+          neoxian  
+          <span>
+            68
+          </span>
+        </div>
+      </div>
+    </div>
+     
     <div
       class="v-responsive v-image"
     >
       <div
         class="v-responsive__sizer"
-        style="padding-bottom: 16.666666666666664%;"
+        style="padding-bottom: 25%;"
       />
       <div
         class="v-image__image v-image__image--preload v-image__image--cover"
@@ -106,15 +144,9 @@ exports[`Storyshots PostPreview voted 1`] = `
     </div>
      
     <div
-      class="v-card__title v-card__title--primary"
+      class="v-card__title"
     >
       <div>
-        <h3
-          class="headline mb-0"
-        >
-          My awesome steem titlee
-        </h3>
-         
         <div>
           The Bank of Neoxian shall loan the sum of 120 steem to @owner99. He promises to repay 135 steem. He shall p...
         </div>
@@ -137,14 +169,7 @@ exports[`Storyshots PostPreview voted 1`] = `
               </i>
             </div>
           </button>
-          $12.17 
-          <i
-            aria-hidden="true"
-            class="v-icon votes material-icons theme--light"
-          >
-            keyboard_arrow_up
-          </i>
-          19 
+           19 
           <button
             class="v-btn v-btn--icon theme--light"
             type="button"
@@ -160,10 +185,15 @@ exports[`Storyshots PostPreview voted 1`] = `
               </i>
             </div>
           </button>
-          19
+          19 
+          <span
+            class="payout"
+          >
+            $12.17
+          </span>
         </div>
       </div>
     </div>
-  </div>
+  </a>
 </div>
 `;
