@@ -1,6 +1,6 @@
 export const actions = {
-  async nuxtServerInit({ dispatch }) {
+  nuxtServerInit({ dispatch }) {
     console.log('nuxtServerInit')
-    await dispatch('posts/loadTags')
+    return dispatch('posts/loadTags')
   }
 }

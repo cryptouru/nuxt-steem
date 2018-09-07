@@ -22,8 +22,20 @@
       <post-preview 
         class="post-preview"
         v-for="(post, index) in posts" 
-        :key="index" 
-        v-bind="post" 
+        :key="index"
+        :title="post.title"
+        :snippet="post.snippet"
+        :img_url="post.img_url"
+        :voted="post.voted"
+        :author="post.author"
+        :author_rep="post.author_rep"
+        :payout="post.payout"
+        :net_votes="post.net_votes"
+        :comment_count="post.comment_count"
+        :parent_permlink="post.parent_permlink"
+        :root_permlink="post.root_permlink"
+        :url="post.url"
+        :created="post.created"
         @vote="$emit('vote', $event)"
       />
     </div>
