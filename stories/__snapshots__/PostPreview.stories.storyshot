@@ -14,15 +14,15 @@ exports[`Storyshots PostPreview default 1`] = `
         <h3
           class="mb-0"
         >
-          The Menzoberranzan Bank of Neoxian: daily contracts: 2018-08-30
+          Steem Monsters Kickstarter Project is now Live! 200 SBD CONTEST!
         </h3>
          
         <div
           class="author"
         >
-          neoxian  
+          steemmonsters  
           <span>
-            68
+            71
           </span>
         </div>
       </div>
@@ -49,7 +49,7 @@ exports[`Storyshots PostPreview default 1`] = `
     >
       <div>
         <div>
-          The Bank of Neoxian shall loan the sum of 120 steem to @owner99. He promises to repay 135 steem. He shall p...
+          Whew! It's been a wild ride getting here and we're so excited to let you all know... VISIT THE…
         </div>
          
         <div
@@ -70,7 +70,7 @@ exports[`Storyshots PostPreview default 1`] = `
               </i>
             </div>
           </button>
-           19 
+           666 
           <button
             class="v-btn v-btn--icon theme--light"
             type="button"
@@ -86,11 +86,11 @@ exports[`Storyshots PostPreview default 1`] = `
               </i>
             </div>
           </button>
-          19 
+          123 
           <span
             class="payout"
           >
-            $12.17
+            $912.17
           </span>
         </div>
       </div>
@@ -113,15 +113,15 @@ exports[`Storyshots PostPreview voted 1`] = `
         <h3
           class="mb-0"
         >
-          The Menzoberranzan Bank of Neoxian: daily contracts: 2018-08-30
+          Steem Monsters Kickstarter Project is now Live! 200 SBD CONTEST!
         </h3>
          
         <div
           class="author"
         >
-          neoxian  
+          steemmonsters  
           <span>
-            68
+            71
           </span>
         </div>
       </div>
@@ -148,7 +148,7 @@ exports[`Storyshots PostPreview voted 1`] = `
     >
       <div>
         <div>
-          The Bank of Neoxian shall loan the sum of 120 steem to @owner99. He promises to repay 135 steem. He shall p...
+          Whew! It's been a wild ride getting here and we're so excited to let you all know... VISIT THE…
         </div>
          
         <div
@@ -169,7 +169,7 @@ exports[`Storyshots PostPreview voted 1`] = `
               </i>
             </div>
           </button>
-           19 
+           666 
           <button
             class="v-btn v-btn--icon theme--light"
             type="button"
@@ -185,11 +185,11 @@ exports[`Storyshots PostPreview voted 1`] = `
               </i>
             </div>
           </button>
-          19 
+          123 
           <span
             class="payout"
           >
-            $12.17
+            $912.17
           </span>
         </div>
       </div>
