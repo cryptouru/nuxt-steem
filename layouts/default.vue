@@ -56,14 +56,12 @@
           { title: 'Trending', to: '/trending' },
           { title: 'New', to: '/created' }
         ],
-        /*tags: [
-          'steem',
-          'life',
-          'cryptocurrency',
-          'comus-fun'
-        ],*/
         title: 'NuxtSteem'
       }
+    },
+    created () {
+      console.log('Layout created')
+      this.$store.dispatch('users/clientInit')
     },
     computed: {
       currentTag() {
