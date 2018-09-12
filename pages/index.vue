@@ -34,14 +34,19 @@ export default {
     }
   },
   created () {
-    console.log('created')
+    console.log('created')   
   },
   mounted () {
     console.log('mounted')
   },
   computed: {
     loadedPosts() {
-      return this.$store.getters['posts/loadedPosts']
+      let posts = this.$store.getters['posts/loadedPosts']
+      // Fix for SSR serialization
+      if (typeof posts[0].created === 'string') {
+        posts = posts.map(x => {return {...x, created: new Date(x.created)}})
+      }
+      return posts
     },
     loading() {
       return this.$store.getters['posts/loadedPosts'].length === 0

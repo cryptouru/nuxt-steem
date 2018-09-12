@@ -24,7 +24,7 @@ export const actions = {
       .then(data => {
         data.shift()
         let tags = data.map(i => i.name)
-        console.log(tags)
+        // console.log(tags)
         vuexContext.commit('setTags', tags)
       })
       .catch(e => console.log(e))
@@ -39,7 +39,7 @@ export const actions = {
     return this.app.$steemApi.database.getDiscussions(topic, query)
       .then((result) => {
         let posts = postHelper.shape(result)
-        console.log(posts)
+        // console.log(posts)
         vuexContext.commit('set', posts)
       })
       .catch(err => console.log(err))
