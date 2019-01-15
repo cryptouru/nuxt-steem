@@ -1,7 +1,7 @@
-let steemconnect2 = require('sc2-sdk');
+let steemconnect = require('steemconnect');
 let config = require('../config')
 
-let steem = steemconnect2.Initialize({
+let steem = steemconnect.Initialize({
     app: config.auth.client_id,
     callbackURL: config.auth.redirect_uri ,
     scope: ['login','vote', 'comment']

@@ -16,7 +16,7 @@ export const posts = [
     net_votes: 666,
     comment_count: 123,
     parent_permlink: 'bank',
-    root_permlink: 'the-menzoberranzan-bank-of-neoxian-daily-contracts-2018-08-30',
+    permlink: 'the-menzoberranzan-bank-of-neoxian-daily-contracts-2018-08-30',
     url: '/kr/@aaron2020jeju/3datge-kr-gazua',
     img_url: 'https://steemitimages.com/640x480/https://i.imgur.com/wvJ2FWb.png',
     created: new Date(2018, 0, 1, 9, 0)
@@ -30,7 +30,7 @@ export const posts = [
     net_votes: 666,
     comment_count: 123,
     parent_permlink: 'bank',
-    root_permlink: 'the-menzoberranzan-bank-of-neoxian-daily-contracts-2018-08-30',
+    permlink: 'the-menzoberranzan-bank-of-neoxian-daily-contracts-2018-08-30',
     url: '/kr/@aaron2020jeju/3datge-kr-gazua',
     img_url: 'https://steemitimages.com/640x480/https://i.imgur.com/wvJ2FWb.png',
     created: new Date(2018, 0, 1, 9, 0)
@@ -44,7 +44,7 @@ export const posts = [
     net_votes: 666,
     comment_count: 123,
     parent_permlink: 'bank',
-    root_permlink: 'the-menzoberranzan-bank-of-neoxian-daily-contracts-2018-08-30',
+    permlink: 'the-menzoberranzan-bank-of-neoxian-daily-contracts-2018-08-30',
     url: '/kr/@aaron2020jeju/3datge-kr-gazua',
     img_url: 'https://steemitimages.com/640x480/https://i.imgur.com/wvJ2FWb.png',
     created: new Date(2018, 0, 1, 9, 0)
@@ -58,7 +58,7 @@ export const posts = [
     net_votes: 666,
     comment_count: 123,
     parent_permlink: 'bank',
-    root_permlink: 'the-menzoberranzan-bank-of-neoxian-daily-contracts-2018-08-30',
+    permlink: 'the-menzoberranzan-bank-of-neoxian-daily-contracts-2018-08-30',
     url: '/kr/@aaron2020jeju/3datge-kr-gazua',
     img_url: 'https://steemitimages.com/640x480/https://i.imgur.com/wvJ2FWb.png',
     created: new Date(2018, 0, 1, 9, 0)

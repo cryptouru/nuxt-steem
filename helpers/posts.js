@@ -18,7 +18,8 @@ const posts = {
       post.payout = this.calculateRewards(post)
       post.snippet = this.createSnippet(post.body)
       post.author_rep = utils.calculateRep(post.author_reputation)
-      post.comment_count = post.replies.length
+      post.comment_count = post.children
+      post.net_votes = post.active_votes.length
       post.created = new Date(post.created)
     }
     return posts

@@ -14,7 +14,7 @@
       <v-card-title>
         <div>
           <div>{{ snippet }}</div>
-          <div class="stats"> <v-btn @click="$emit('vote', root_permlink)" icon class="up-vote" :class="{ voted: voted }"><v-icon>keyboard_arrow_up</v-icon></v-btn> {{ net_votes }} <v-btn icon><v-icon>comment</v-icon></v-btn>{{ comment_count }} <span class="payout">${{ payout }}</span></div>
+          <div class="stats"> <v-btn @click="$emit('vote', permlink)" icon class="up-vote" :class="{ voted: voted }"><v-icon>keyboard_arrow_up</v-icon></v-btn> {{ net_votes }} <v-btn icon><v-icon>comment</v-icon></v-btn>{{ comment_count }} <span class="payout">${{ payout }}</span></div>
         </div>
       </v-card-title>
     </v-card>
@@ -65,7 +65,7 @@ export default {
       type: String,
       required: true
     },
-    root_permlink: {
+    permlink: {
       type: String,
       required: true
     },

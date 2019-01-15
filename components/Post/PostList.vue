@@ -33,7 +33,7 @@
         :net_votes="post.net_votes"
         :comment_count="post.comment_count"
         :parent_permlink="post.parent_permlink"
-        :root_permlink="post.root_permlink"
+        :permlink="post.permlink"
         :url="post.url"
         :created="post.created"
         @vote="$emit('vote', $event)"
